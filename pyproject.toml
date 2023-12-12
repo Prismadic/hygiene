@@ -2,3 +2,4 @@
 name = "hygiene"
 version = "0.0.1"
 description = "a data preprocessing toolkit that makes it easy to create common LLM-related data structures; from training data to chain payloads!"
+readme = "dynamic"
