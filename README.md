@@ -20,7 +20,7 @@
 ## 💾 Installation
 
 ``` bash
-pip install hygiene
+pip install prismadic[hygiene]
 ```
 or 
 ``` bash
