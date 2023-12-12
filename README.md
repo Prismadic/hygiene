@@ -20,7 +20,7 @@
 ## 💾 Installation
 
 ``` bash
-pip install hygiene-dm
+pip install hygiene
 ```
 or 
 ``` bash
