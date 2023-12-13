@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='data-hygiene',
+    name='data_hygiene',
     version='0.0.1',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
