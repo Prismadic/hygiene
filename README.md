@@ -20,7 +20,7 @@
 ## 💾 Installation
 
 ``` bash
-pip install data-hygiene
+pip install llm-hygiene
 ```
 or 
 ``` bash
