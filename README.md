@@ -149,7 +149,7 @@ JSON->YAML bytes ratio: 0.8512396694214877
 
 ## ⌨️ Working on
 
-- [ ] integrating with Qdrant
+- [ ] integrating with Milvus
 - [ ] integrating with embeddings<sup>[1]</sup>
 - [x] finishing this readme
 - [x] pip package
