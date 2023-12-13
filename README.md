@@ -2,8 +2,8 @@
    <img height="250" src="./hygiene.png">
    <br>
    <h3 align="center">hygiene</h3>
-   <p align="center">a data preprocessing toolkit that makes it easy to create common LLM-related data structures</p>
-   <p align="center"><i>~ from training data to chain payloads! ~</i></p>
+   <p align="center">A payload compression toolkit that makes it easy to create ideal data structures for LLMs.</p>
+   <p align="center"><i>~ from training data to chain payloads ~</i></p>
 </p>
 
 ## 🤔 Why?
