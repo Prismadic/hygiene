@@ -43,7 +43,7 @@ Type "help", "copyright", "credits" or "license" for more information.
         list({"name": "John", "age": 30, "city": "New York"}),
         [{"name": "John", "age": 30, "city": "New York"}]
     ]
->>> qdrant_payload_examples = [
+>>> milvus_payload_examples = [
         {"count": 10, "sizes": [35, 36, 38]},
         {"price": 11.99,"ratings": [9.1, 9.2, 9.4]},
         {"is_delivered": True,"responses": [False, False, True, False]},
@@ -86,7 +86,7 @@ JSON->YAML bytes ratio: 0.8695652173913043
   name: John
 
 JSON->YAML bytes ratio: 0.8163265306122449
->>> for each in qdrant_payload_examples:
+>>> for each in milvus_payload_examples:
          package = boxing.Payload(data=each, fmt="yml")
          payload = package.deliver()
          print(payload)

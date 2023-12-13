@@ -8,7 +8,7 @@ singletons = [
     [{"name": "John", "age": 30, "city": "New York"}]
 ]
 
-qdrant_payload_examples = [
+milvus_payload_examples = [
     {
         "count": 10,
         "sizes": [35, 36, 38]
@@ -61,7 +61,7 @@ for each in singletons:
     print(payload)
     calculate_ratio(payload, each)
 
-for each in qdrant_payload_examples:
+for each in milvus_payload_examples:
     package = boxing.Payload(data=each, fmt="yml")
     payload = package.deliver()
     print(payload)
