@@ -261,6 +261,20 @@ Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, Ryan Lowe*
 
 https://arxiv.org/abs/2203.02155
 
+.. raw:: html
+
+   <h3 align="center">
+
+learn more about how Prismadic uses 🛸
+
+subscribe to our `substack <https://prismadic.substack.com>`_
+
+.. raw:: html
+
+   </h3>
+
+|A1| |A2|
+
 Indices and tables
 ----------------
 
