@@ -2,12 +2,34 @@ import csv
 import yaml
 
 class DataFormatter:
+    """
+    A class for converting data to a specified target format.
+
+    Args:
+        fmt (str): The format of the target output.
+        data (str): The input data to be formatted.
+
+    Attributes:
+        fmt (str): The format of the target output.
+        data (str): The input data to be formatted.
+    """
+
     def __init__(self, fmt=None, data=None):
         self.fmt = fmt
         self.data = data
 
     def format(self):
-        """Convert data to the specified target format"""
+        """
+        Convert data to the specified target format.
+
+        Raises:
+            ValueError: If the formatter is declared without a format, or if the target format is unsupported.
+            ValueError: If the data type is unsupported.
+            TypeError: If the YAML structure is improper and cannot be formatted.
+
+        Returns:
+            str: A success message indicating that the conversion to CSV was successful.
+        """
         if self.fmt is None:
             raise ValueError("Formatter declared without format!")
 
@@ -37,20 +59,18 @@ class DataFormatter:
                         else:
                             writer = csv.DictWriter(open('output.csv', 'w'), fieldnames=list(rows[0].keys()))
                             writer.writeheader()
-                        
+                    
                         for row in rows:
                             writer.writerow(row)
-                        
+                    
                     elif isinstance(yaml_obj, dict):
                         writer = csv.DictWriter(open('output.csv', 'w'), fieldnames=list(yaml_obj.keys()))
                         writer.writeheader()
-                        writer.writerow(yaml_obj)
-
-                    return "Conversion to CSV successful"
-                except:
-                    raise TypeError("Improper YAML structure, cannot be formatted")
-
+                except yaml.YAMLError:
+                    raise TypeError("Improper YAML structure!")
             else:
-                raise ValueError("Unsupported data type")
+                raise ValueError("Unsupported data type!")
         else:
-            raise ValueError("Unsupported target format")
+            raise ValueError("Unsupported format!")
+
+        return "Data successfully converted to CSV format."
